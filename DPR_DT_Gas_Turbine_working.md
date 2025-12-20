@@ -353,11 +353,7 @@ The following support is required from DRDO on a cost-reimbursable basis (not fu
 
 | Domain | Demonstrated Capability | Relevant Projects | References |
 |--------|------------------------|-------------------|-----------|
-| **Gas Turbine Simulation** | Physics-based modeling using NPSS, GasTurb; component-level and cycle analysis | Project X (FY2020-2021): Developed thermodynamic models for 3-spool engine; Project Y (FY2022-2023): CFD validation of compressor stages | Published in Journal of Engineering Mechanics (2023) |
-| **Machine Learning & AI** | Deep learning (CNN, RNN, LSTM, Transformer); regression; ensemble methods; PINNs | Project Z (FY2021-2022): Developed anomaly detection for jet engine vibration data; Collaboration with IIT on ML applications | 15+ ML projects completed |
-| **Real-Time Systems** | RTOS development (VxWorks, Linux); embedded systems; real-time data acquisition; low-latency processing | Flight test support systems; aircraft avionics integration; automotive ECU development | 10+ real-time system projects |
-| **Software Integration** | Full-stack development; system architecture; data pipeline design; GUI development | Digital dashboards; data management platforms; cloud-edge integration | 20+ software projects |
-| **Aerospace Standards Compliance** | Quality management (ISO 9001, AS9100); software documentation (DO-178C, DO-254); security protocols | Military contracts; defense-approved vendor; security certification (ISO 27001) | Certified supplier for DRDO, HAL, IAF |
+
 
 #### 8.2.2 Infrastructure & Resources
 
