@@ -234,7 +234,45 @@ The following support is required from DRDO on a cost-reimbursable basis (not fu
 | 4 | Real-Time Performance | Low | Critical | Perform early computational benchmarking; optimize critical path algorithms; use GPU acceleration for ML inference; select platform with sufficient margin (2-3x performance headroom) |
 | 5 | Hybrid Model Fidelity | Medium | High | Use iterative validation; test individual block accuracy; employ sensitivity analysis; incorporate cross-validation with multiple ML techniques (regression, neural networks, ensemble methods) |
 
-*(Additional risk tables 6.2-6.6 retained from original with corrected numbering)*
+### 6.2 Schedule Risks
+
+| S.No. | Risk | Probability | Impact | Mitigation Strategy |
+|-------|------|-------------|--------|----------------------|
+| 1 | Delayed PDR Approval | Low | Medium | Initiate pre-PDR discussions with DRDO at proposal stage; establish clear requirement elicitation process; weekly alignment meetings with user; prepare multiple SRD versions for rapid iteration |
+| 2 | Extended Data Pre-processing | Medium | Medium | Allocate 4-6 weeks buffer in detailed design phase; engage data scientists early; automate data validation pipelines; establish parallel data processing workflows |
+| 3 | Hardware Procurement Delays| Medium | Medium | Place orders immediately after CDR; maintain alternative vendor list; use interim workstations for initial development; negotiate delivery schedules with penalties |
+| 4 | On-site Testing Duration | Medium | Medium | Prepare ATP document early (at PDR); conduct pre-ATP testing with test data; maintain test team on-site continuously; establish clear pass/fail criteria in advance |
+
+### 6.3 Resource & Budget Risks
+
+| S.No. | Risk | Probability | Impact | Mitigation Strategy |
+|-------|------|-------------|--------|----------------------|
+| 1 | Key Personnel Attrition | Low | High | Establish competitive compensation; cross-train team members; document critical knowledge; retain contingency budget for recruitment/backfill |
+| 2 | Cost Overrun | Medium | Medium | Obtain fixed-price quotes; phase procurement; negotiate volume discounts; maintain 10% budget contingency; approve only essential acquisitions early |
+| 3 | Scope Creep | Medium | Medium | Establish formal change control process; define scope baseline at PDR; require DRDO approval for scope changes; apply time/cost impact analysis |
+
+### 6.4 Technology & Integration Risks
+
+| S.No. | Risk | Probability | Impact | Mitigation Strategy |
+|-------|------|-------------|--------|----------------------|
+| 1 | Tool Interoperability | Medium | Medium | Evaluate tool versions early; establish test environment; use middleware/APIs for tool integration; employ containerization (Docker) for portability |
+| 2 | Data Security Breach | Low | Critical | Implement air-gapped development on DRDO site; enforce encryption for all data transfers; establish audit logs; conduct security training for all personnel; restrict USB/external device access |
+| 3 | Algorithm Performance Degradation | Medium | Medium | Employ physics-based constraints in data-driven models (Physics-Informed Neural Networks); test with out-of-distribution data; design prognostics algorithms to flag degradation; use ensemble methods for robustness |
+
+### 6.5 Organizational & Governance Risks
+
+| S.No. | Risk | Probability | Impact | Mitigation Strategy |
+|-------|------|-------------|--------|----------------------|
+| 1 | Review Committee Delays | Low | Medium | Establish review schedules 2 months in advance; provide complete review packages on time; designate single DRDO liaison; schedule monthly progress reviews with committee |
+| 2 | Changing User Requirements | Medium | High | Baseline requirements at PDR in formal SRD; establish formal change control; require mutual sign-off on changes; apply schedule/cost impact analysis |
+| 3 | IPR Disputes | Low | Medium | Finalize IPR terms in RFP; document contributions clearly; establish IP steering committee; engage legal counsel early |
+
+### 6.6 Risk Monitoring & Escalation
+
+- **Risk Register:** Maintain live risk register updated monthly; track risk status (open/mitigated/closed).
+- **Review Cadence:** Monthly review with project team; quarterly review with DRDO steering committee.
+- **Escalation Threshold:** Risks impacting schedule >4 weeks or budget >₹50L escalated immediately to program director.
+- **Contingency Allocation:** 10% schedule buffer (3.6 months) and 10% cost buffer (retained for emergencies).
 
 ---
 
@@ -266,34 +304,20 @@ Indigenous Content Target: **75-80%**
 
 ## 9. PROJECT EXECUTION PLAN & GOVERNANCE
 
+
 ### 9.1 Project Management Structure
 
-                     DRDO Steering Committee
-                              |
-                       Program Director (DRDO)
-                              |
-                     Industrial Partner
-                     Project Director
-                              |
-    +----------+----------+----------+----------+----------+
-    |          |          |          |          |          |
-Therm.Eng.  ML Eng.  Soft. Arch  Data Sci.  QA Lead    Sys. Eng.
-    |          |          |          |          |          |          
-   Team       Team      Team       Team       Team       Team
+| Level | Role | Responsibilities |
+|-------|------|------------------|
+| **L1** | DRDO Steering Committee | Strategic oversight, milestone approvals |
+| **L2** | Program Director (DRDO) | Technical direction, resource allocation |
+| **L3** | Industrial Partner Project Director | Project execution, team coordination |
+| **L4** | Domain Teams | - Therm.Eng.: Physics models<br>- ML Eng.: AI algorithms<br>- Soft. Arch.: System architecture<br>- Data Sci.: Data pipelines<br>- QA Lead: Testing & validation<br>- Sys. Eng.: Integration & deployment |
 
-
-DRDO Steering Committee
-|
-|--- Program Director (DRDO)
-|
-Industrial Partner
-Project Director
-|
-+-----------+----------+--------------+------------+-----------+
-|           |          |              |            |           |
-Therm.Eng. ML Eng.  Soft. Arch    Data Sci.    QA Lead      Sys. Eng.
-|           |          |              |            |           |
-Team      Team        Team          Team         Team        Team
+**Team Composition:**
+- **Total Team:** 20 members across 6 domains
+- **Reporting:** Direct to Project Director
+- **Cross-functional:** Matrix structure for milestone delivery[file:2]
 
 ### 9.2 Governance & Review Gates
 - **Monthly Technical Reviews:** Project status, technical blockers, risk updates.
@@ -351,7 +375,57 @@ Team      Team        Team          Team         Team        Team
    - Source code repository with version control
    - Real-time execution on designated RTOS platform
 
-*(Sections 11.2-11.4 retained from original with corrected numbering)*
+### 11.2 Documentation Deliverables
+
+1. **Design Documents**
+   - System Requirement Document (SRD)
+   - System Design Document (SDD)
+   - Detailed Design Document (DDD)
+   - Critical Design Document (CDD)
+   - Software Requirements Specification (SRS)
+   - Software Design Document (SDD for GUI)
+
+2. **Test Documents**
+   - Acceptance Test Plan (ATP)
+   - Test Case Specifications (500+ test cases)
+   - Test Results Report
+   - Validation & Verification Report (V&V)
+
+3. **User Documentation**
+   - User Manual (operation, maintenance, troubleshooting)
+   - System Administrator Guide (hardware/software setup)
+   - API Documentation (for future integrations)
+   - Quick Start Guide
+
+4. **Project Documentation**
+   - Project Success Report
+   - Lessons Learned & Best Practices
+   - Risk Register & Mitigation Summary
+   - Financial Closeout Report
+
+### 11.3 Knowledge Transfer Deliverables
+
+**Training Materials**
+   - Training course
+   - Training slides, videos
+   - Reference manuals
+
+### 11.4 Intellectual Property Deliverables
+
+1. **Access to Developed Work including:**
+   - Version-controlled repository
+   - Build/deployment scripts
+   - Test harnesses and utilities
+
+2. **Data & Models**
+   - Trained ML models (weights, architectures, training data specifications)
+   - Physics-based component models
+   - Calibration data & tuning parameters
+
+3. **IP Rights Documentation**
+   - List of all custom algorithms, designs, and methodologies
+   - Patent applications (if applicable)
+   - Licensing terms for third-party tools used
 
 ---
 
