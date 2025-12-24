@@ -54,8 +54,7 @@
   - [11.3 Knowledge Transfer Deliverables](#113-knowledge-transfer-deliverables)
   - [11.4 Intellectual Property Deliverables](#114-intellectual-property-deliverables)
 - [12. PROJECT TIMELINE & MILESTONE SCHEDULE](#12-project-timeline--milestone-schedule)
-- [13. FINANCIAL SUMMARY](#13-financial-summary)
-- [14. CONCLUSION](#14-conclusion)
+- [13. CONCLUSION](#13-conclusion)
 - [APPENDICES](#appendices)
   - [Appendix A: Glossary of Terms](#appendix-a-glossary-of-terms)
 
@@ -353,12 +352,7 @@ Team      Team        Team          Team         Team        Team
 
 ---
 
-## 13. FINANCIAL SUMMARY
-*(Content retained from original)*
-
----
-
-## 14. CONCLUSION
+## 13. CONCLUSION
 
 This Detailed Project Report outlines the comprehensive approach for developing a hybrid Digital Twin framework for an Aero Gas Turbine Engine Health Usage Monitoring System. The project leverages state-of-the-art physics-based thermodynamic modeling, advanced machine learning techniques, and real-time integration to create a high-fidelity virtual replica of aero-engines, enabling diagnostics, prognostics, and lifecycle health management.
 
