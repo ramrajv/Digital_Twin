@@ -275,9 +275,10 @@ Indigenous Content Target: **75-80%**
                      Industrial Partner
                      Project Director
                               |
-    +----------+----------+----------+----------+----------+----------+
-    |          |          |          |          |          |          |
+    +----------+----------+----------+----------+----------+
+    |          |          |          |          |          |
 Therm.Eng.  ML Eng.  Soft. Arch  Data Sci.  QA Lead    Sys. Eng.
+    |          |          |          |          |          |          
    Team       Team      Team       Team       Team       Team
 
 
