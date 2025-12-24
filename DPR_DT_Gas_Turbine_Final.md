@@ -268,6 +268,19 @@ Indigenous Content Target: **75-80%**
 
 ### 9.1 Project Management Structure
 
+                     DRDO Steering Committee
+                              |
+                       Program Director (DRDO)
+                              |
+                     Industrial Partner
+                     Project Director
+                              |
+    +----------+----------+----------+----------+----------+----------+
+    |          |          |          |          |          |          |
+Therm.Eng.  ML Eng.  Soft. Arch  Data Sci.  QA Lead    Sys. Eng.
+   Team       Team      Team       Team       Team       Team
+
+
 DRDO Steering Committee
 |
 |--- Program Director (DRDO)
