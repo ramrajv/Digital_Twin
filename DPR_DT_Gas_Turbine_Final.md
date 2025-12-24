@@ -475,5 +475,3 @@ This Detailed Project Report outlines the comprehensive approach for developing 
 **Date:** [Date]  
 **Authorized by:** [Project Director Name & Signature]  
 **Reviewed by:** [DRDO/User Committee Representative Signature]
-
-**Filename:** `DPR_DT_Gas_Turbine_Final_Corrected.md`
